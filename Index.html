@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/Estilo.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/ahorcado.css">
 </head>
 
 <body>
@@ -15,13 +16,24 @@
     </header>
 
     <main>
-        <section class="home__contenido">
+        <section class="home__contenido" style="display:none;">
             <button class="home__btn-iniciarjuego">Iniciar Juego</button>
             <button class="home__btn-agregarpalabra" onclick="">Agregar Palabra</button>
         </section>
 
-        <section class="">
-
+        <section class="ahorcado__contenido" style="display:flex;">
+            <div class="ahorcado__canvas">
+                <div class="ahorcado__div-horca">
+                    <canvas class="horca"></canvas>
+                </div>
+                <div class="ahorcado__div-label">
+                    <label class="ahoracado__label">¡Lo siento!<br> Has perdido</label>
+                </div>
+            </div>
+            <div class="ahorcado__botones">
+                <button class="ahorcado__btn-nuevojuego">Nuevo Juego</button>
+                <button class="ahorcado__btn-desistir" onclick="">Desistir</button>
+            </div>
         </section>
 
         <section class="">
