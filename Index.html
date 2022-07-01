@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <title>Juego Ahorcado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/Estilo.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/ahorcado.css">
 </head>
@@ -16,38 +17,32 @@
     </header>
 
     <main>
-        <section class="home__contenido" style="display:none;">
-            <button class="home__btn-iniciarjuego">Iniciar Juego</button>
-            <button class="home__btn-agregarpalabra" onclick="">Agregar Palabra</button>
+        <section class="home__contenido" style="display:flex;">
+            <button class="home__btn-iniciarjuego" onclick="iniciarJuego()">Iniciar Juego</button>
+            <button class="home__btn-agregarpalabra" >Agregar Palabra</button>
         </section>
 
-        <section class="ahorcado__contenido" style="display:flex;">
+        <section class="ahorcado__contenido" style="display:none;">
             <div class="ahorcado__canvas">
                 <div class="ahorcado__div-horca">
-                    <canvas class="horca"></canvas>
-                </div>
-                <div class="ahorcado__div-label">
-                    <label class="ahoracado__label">¡Lo siento!<br> Has perdido</label>
+                    <canvas  id="horca" class="horca" height="530px" width="700">
                 </div>
             </div>
             <div class="ahorcado__botones">
-                <button class="ahorcado__btn-nuevojuego">Nuevo Juego</button>
-                <button class="ahorcado__btn-desistir" onclick="">Desistir</button>
+                <button class="ahorcado__btn-nuevojuego" onclick="newGame()">Nuevo Juego</button>
+                <button class="ahorcado__btn-desistir" onclick="desistir()">Desistir</button>
             </div>
         </section>
 
         <section class="">
-
-        </section>
-
-        <section class="">
-
-        </section>
     </main>
 </body>
 
 <footer>
 
 </footer>
-
+<script src="js/logica.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/botones.js"></script>
+<script src=""></script>
 </html>

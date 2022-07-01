@@ -6,32 +6,23 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+/*Div de la seccion de ahorcado*/
 .ahorcado__canvas{
-    display: flex;
-    
-    align-items: center;
+    height: 90%;
 }
 .ahorcado__div-horca{
-    width: 75%;
+    height: 100%;
 
     display: flex;
-    justify-content: flex-end
+    align-items: flex-end;
+    justify-content: center;
 }
-.horca{
-    height: 500px;
-    width: 500px;
-}
-/*.ahorcado__div-label{
-    width: 300px;
-    height: 300px;
-}*/
-.ahoracado__label{
-    font-size: 1.7rem;
-    font-weight: 500;
-    color: red;
-}
+
+/*Div de la seccion de los botones*/
 .ahorcado__botones{
     margin: 5px;
+    height: 10%;
 
     display: flex;
     justify-content: center;
